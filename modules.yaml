@@ -9,7 +9,7 @@ data:
   arch: x86_64
   artifacts:
     rpms:
-    - kkt-0:30-1.x86_64
+    - kkt-0:80-1.x86_64
 ...
 ---
 document: modulemd
@@ -23,7 +23,7 @@ data:
   summary: Kkt
   artifacts:
     rpms:
-    - kkt-0:10-1.x86_64
+    - kkt-0:30-1.x86_64
 ...
 ---
 document: modulemd

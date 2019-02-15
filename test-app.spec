@@ -1,11 +1,11 @@
 Name:           test-app
 Version:        1
 Release:        1
-Summary:        Test APP which requires kkt >= 25
+Summary:        Test APP which requires kkt >= 50
 
 License:        Public Domain
 
-Requires:       kkt >= 25
+Requires:       kkt >= 50
 
 %description
 %{summary}.
