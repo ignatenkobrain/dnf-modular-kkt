@@ -1,0 +1,57 @@
+---
+document: modulemd
+version: 2
+data:
+  name: kkt
+  stream: master
+  version: 2019
+  context: deadbeef
+  arch: x86_64
+  artifacts:
+    rpms:
+    - kkt-0:30-1.x86_64
+...
+---
+document: modulemd
+version: 2
+data:
+  name: kkt
+  stream: master
+  version: 2019
+  context: bbadbeef
+  arch: x86_64
+  summary: Kkt
+  artifacts:
+    rpms:
+    - kkt-0:10-1.x86_64
+...
+---
+document: modulemd
+version: 2
+data:
+  name: test-app
+  stream: master
+  version: 2019
+  context: deadbeef
+  arch: x86_64
+  summary: Test APP
+  dependencies:
+  - requires:
+      kkt: []
+  profiles:
+    default:
+      rpms:
+      - test-app
+  artifacts:
+    rpms:
+    - app-0:1-1.x86_64
+...
+---
+document: modulemd-defaults
+version: 1
+data:
+  module: test-app
+  stream: master
+  profiles:
+    master: [default]
+...
