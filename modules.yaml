@@ -3,7 +3,7 @@ document: modulemd
 version: 2
 data:
   name: kkt
-  stream: master
+  stream: konsky
   version: 2019
   context: deadbeef
   arch: x86_64
@@ -16,7 +16,7 @@ document: modulemd
 version: 2
 data:
   name: kkt
-  stream: master
+  stream: barani
   version: 2019
   context: bbadbeef
   arch: x86_64

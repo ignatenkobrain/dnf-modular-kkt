@@ -17,9 +17,9 @@ build versions: `10` and `30`.
 
 And they are packed into a modules as following:
 
-* `kkt:master:2019:deadbeef:x86_64`
+* `kkt:konsky:2019:deadbeef:x86_64`
   * Contains `kkt-30-1.x86_64`
-* `kkt:master:2019:bbadbeef:x86_64`
+* `kkt:barani:2019:bbadbeef:x86_64`
   * Contains `kkt-10-1.x86_64`
 * `test-app:master:2019:deadbeef:x86_64`:
   * Contains `test-app-1-1.x86_64`
@@ -42,11 +42,3 @@ $ ./build.sh
 $ sudo rm -rf /var/cache/dnf/test*
 $ sudo dnf --repofrompath=test,$PWD/repo module install test-app
 ```
-
-## How come that different contexts have different versions of RPM?
-
-Well, you can easily do so. Just depending on your dependencies you can change
-your RPM.
-
-But it can be same version, but it can have some conflicts in place.
-You can do all that in RPM.
